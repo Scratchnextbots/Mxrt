@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Clave</title>
+    <script>
+        function verificarClave() {
+            const claveCorrecta = "A1B2C3D4-E5F6G7H8-I9J0K1L2-M3N4O5P6-Q7R8S9T0-U1V2W3X4-Y5Z6A7B8";
+            const claveIngresada = document.getElementById("clave").value;
+            
+            if (claveIngresada === claveCorrecta) {
+                window.location.href = "index.html";
+            } else {
+                alert("Clave incorrecta, por favor intenta nuevamente.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ingresa la Clave</h1>
+    <input type="text" id="clave" placeholder="Ingresa la clave aquí">
+    <button onclick="verificarClave()">Enviar</button>
+</body>
+</html>
